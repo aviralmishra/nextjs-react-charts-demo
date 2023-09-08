@@ -128,3 +128,14 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Distribution / packaging
+node_modules
+.pnp
+coverage
+.next/
+out/
+build
+
+### macOS ###
+*.DS_Store
