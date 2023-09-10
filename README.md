@@ -20,3 +20,4 @@ This application uses NextJS as the core framework and React + React Charts for 
 ### Executing program
 
 * npm run dev
+* http://localhost:3000
