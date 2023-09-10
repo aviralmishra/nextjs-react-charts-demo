@@ -2,7 +2,7 @@
 Data visualisation with React Charts built on NextJS
 
 ## Description
-This application uses NextJS to as the core framework and React + React Charts for views.    
+This application uses NextJS as the core framework and React + React Charts for views.    
 
 ## Getting Started
 
