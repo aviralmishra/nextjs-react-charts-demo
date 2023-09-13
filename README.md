@@ -15,6 +15,7 @@ This application uses NextJS as the core framework and React + React Charts for 
 ### Installing
 
 * npm install next@latest react@latest react-dom@latest
+* npm install server-only client-only
 * npm install react-chartjs-2 chart.js
 
 ### Executing program
