@@ -12,6 +12,19 @@ const Page = async () => {
             <section>
                 <h2>{response.city} ({response.country})</h2>
             </section>
+            <table>
+                <th>Forecast</th>
+                {
+                    response.periods.map((period) =>
+                        <tr>
+                            <td><img src={period.icon} /></td>
+                            <td>{period.description}</td>
+                            <td>{period.temp}</td>
+                            <td>{period.timestamp}</td>
+                        </tr>
+                    )
+                }
+            </table>
         </>
     )
 }
