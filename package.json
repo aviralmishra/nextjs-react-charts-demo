@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chart.js": "^4.4.0",
+    "faker": "^6.6.6",
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "eslint": "latest",

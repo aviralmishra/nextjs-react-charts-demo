@@ -1,13 +1,22 @@
-import '../globals.css'
-import styles from '../page.module.css'
+import '../globals.css';
+import styles from '../page.module.css';
 
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from 'next/link';
 
-import { getWeatherData } from '/lib/weather-data'
+import WeatherChart from './weather-chart';
+import { getWeatherData } from '/lib/weather-data';
 
 const Page = async () => {
     const response = await getWeatherData()
+    const labels = response.periods.map((period) => period.timestamp)
+    const datasets = [
+        {
+            label: 'Temperatures',
+            data: response.periods.map((period) => period.temp),
+            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        }
+    ]
 
     return (
         <main className={styles.main}>
@@ -27,6 +36,7 @@ const Page = async () => {
                     }
                 </tbody>
             </table>
+            <WeatherChart data={{ labels, datasets }} />
         </main>
     )
 }
